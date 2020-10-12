@@ -1,0 +1,122 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="public/css/style.css">
+  <link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="public/css/icofont.min.css">
+  <link rel="stylesheet" type="text/css" href="public/css/animate.css">
+  <script src="public/javascript/wow.min.js"></script>
+  <script>
+    new WOW().init();
+    </script>
+  <title>Home</title>
+</head>
+<body>
+  <header>
+    <div class="text-center" id="header">
+      <h1>Desenvolvimento de Aplicações Web - 1</h1>
+      <p class="h1-desc">Primeira atividade avaliativa.</p>
+    </div>
+  </header>
+
+<!-- Navbar -->
+  <div id="navbar">
+    <a href="/"><i class="icofont-home" style="font-size: 1.5rem;"></i></a>
+    <a href="/eu">Eu</a>
+    <a href="/aluno">Aluno</a>
+    <a href="/duvida">Dúvida</a>
+  </div>
+
+  <!-- /Navbar -->
+
+  <div id="main" class="container">
+    <div class="text-center">
+      <h1>Quem sou eu?</h1>
+      <p class="h1-desc">Seção destinada para a apresentação do desenvolvedor.</p>
+    </div>
+    <section id="overview">
+      <div class="row">
+        <div class="background-overlay">
+          <h2>As pessoas deixam de começar um projeto não por não estarem prontas, 
+            mas por terem medo de começar.</h2>
+            <hr style="border-top: 1px solid rgba(255,255,255,1);"></hr>
+            <p>Seth Godin</p>
+        </div>
+      </div>
+    </section>
+    <section id="pessoal" class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+      <div class="row ">
+        <div class="col-sm-4">
+          <img src="/static/img/gustavobessa.jpg" class="gustavo-img">
+        </div>
+        <div class="col-sm-8">
+          <h3 style="text-align: center;">Gustavo William de Bessa</h3>
+          <p>
+            <strong>Sua jornada com programação e desenvolvimento começou a 2 anos no IFTM - UPT.</strong>
+            Atualmente, trabalha em uma startup de desenvolvimento voltado a produtos.
+          </p>
+          <p>
+            <strong>Sua motivação e busca pelo aprendizado na área surgiram em 2015, após cursar uma disciplina de algoritmos e programação C 
+            num curso superior de Engenharia Mecânica.</strong>
+            Ao sentir que não voltaria a ter contato com aquela disciplina, abandonou a engenharia e 
+            procurou um curso voltado ao seu maior vício: códigos. Sempre acompanhou seu pai nos trabalhos 
+            desde cedo, aos 11 anos lavava carros numa loja de carros usados, dos 14 aos 18 anos trabalhou 
+            como caixa/repositor de supermercado, dos 19 aos 22 de balconista/entregador em loja de materiais 
+            para construção e, finalmente, atua como desenvolvedor a dois meses.
+          </p>
+          <p>
+            <strong>Em 2020, alcançou o terceiro lugar na competição em grupo Hacka4life, pela equipe Sem Covid, Com Vida.</strong> 
+            O evento foi organizado pelo IFTM em parceria com a UFTM, contando com diversos patrocinadores e apoiadores. 
+            O propósito do evento, era solucionar problemáticas na área de Saúde e Economia, geradas pelo COVID-19. 
+            <strong>Nesse evento, se desafiou a desenvolver do zero um aplicativo mobile, sem nunca antes ter aberto o Android Studio.</strong>
+          </p>
+          <p>
+            <strong>Gosta de desafios, ideias inovadoras, novas tecnologias, programação, e café com açúcar.</strong> 
+            Sente que sua jornada está apenas começando, e sua fome de conhecimento está cada vez maior. 
+            <strong>Não há nada melhor que trabalhar com algo que seja prazeroso à sua mente.</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="habilidades" class="wow fadeInUp" data-wow-duration="1s">
+      <h2 class="text-center">Habilidades</h2>
+      <div class="row">
+        <div class="col-md-4 skill"><i class="icofont-computer" style="font-size: 4rem;"></i>
+          <h3>Websites</h3>
+          <p>Conhecimentos na criação de aplicações web, com AngularJS.</p>
+        </div>
+        <div class="col-md-4 skill"><i class="icofont-brain-alt" style="font-size: 4rem;"></i>
+          <h3>Lógica</h3>
+          <p>Bom em estruturar lógicas de programação, sempre encontra uma solução.</p>
+        </div>
+        <div class="col-md-4 skill"><i class="icofont-speech-comments" style="font-size: 4rem;"></i>
+          <h3>Comunicação</h3>
+          <p>Utiliza uma comunicação limpa, o que evita múltiplas interpretações e ambiguidades.</p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-4 skill"><i class="icofont-learn" style="font-size: 4rem;"></i>
+          <h3>Aprendizado</h3>
+          <p>Bom foco no aprendizado, vontade e facilidade no aprendizado de coisas novas.</p>
+        </div>
+        <div class="col-md-4 skill"><i class="icofont-brand-java" style="font-size: 4rem;"></i>
+          <h3>Java</h3>
+          <p>Aptidão em desenvolvimento Java e Programação Orientada a Objetos num geral.</p>
+        </div>
+        <div class="col-md-4 skill"><i class="icofont-database" style="font-size: 4rem;"></i>
+          <h3>Banco de Dados</h3>
+          <p>Conhecimentos em estruturação de entidades, triggers, sequences, e consultas SQL.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <footer class="text-center pt-3 pb-3" id="footer">
+    <p>Gustavo William de Bessa</p>
+    <p id="dataHoje"></p>
+  </footer>
+  <script src="public/javascript/script.js"></script>
+</body>
+</html>
