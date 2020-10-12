@@ -2,9 +2,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="public/css/style.css">
-  <link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="public/css/icofont.min.css">
+  <link rel="stylesheet" type="text/css" href="../../public/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../../public/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../public/css/icofont.min.css">
   <title>Home</title>
 </head>
 <body>
@@ -26,7 +26,38 @@
   <!-- /Navbar -->
 
   <div id="main" class="container">
-
+    <div class="text-center">
+      <h1>Dúvidas</h1>
+      <p class="h1-desc">Formulário para envio de dúvidas.</p>
+    </div>
+    <section id="form">
+      <form method="GET" action="/confirmacao">
+        <div class="row mb-3">
+          <div class="col-sm-4">
+            <label for="descricao" class="float-r mobile-left">Descrição</label>
+          </div>
+          <div class="col-sm-6">
+            <textarea name="usrDesc" id="descricao" rows="5" style="resize: none; width: 100%;" class="form-control"></textarea>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-sm-4">
+            <label for="email" class="float-r mobile-left">Email</label>
+          </div>
+          <div class="col-sm-6">
+            <input name="usrEmail" id="email" type="email" placeholder="email@email.com" style="width: 100%;" class="form-control">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 offset-sm-4">
+            <input type="button" class="btn btn-dark mt-3" value="Cancelar" style="width: 100%;">
+          </div>
+          <div class="col-sm-3">
+            <input type="submit" class="btn btn-dark mt-3" value="Enviar" style="width: 100%;">
+          </div>
+        </div>
+      </form>
+    </section>
   </div>
 
 
@@ -34,6 +65,6 @@
     <p>Gustavo William de Bessa</p>
     <p id="dataHoje"></p>
   </footer>
-  <script src="public/javascript/script.js"></script>
+  <script src="../../public/javascript/script.js"></script>
 </body>
 </html>

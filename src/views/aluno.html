@@ -2,9 +2,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="public/css/style.css">
-  <link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="public/css/icofont.min.css">
+  <link rel="stylesheet" type="text/css" href="../../public/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../../public/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../public/css/icofont.min.css">
   <title>Home</title>
 </head>
 <body>
@@ -26,7 +26,24 @@
   <!-- /Navbar -->
 
   <div id="main" class="container">
-
+    <div class="text-center">
+      <h1>Alunos do Curso</h1>
+      <p class="h1-desc">Lista dos alunos que estão cursando a disciplina.</p>
+    </div>
+    <div style="overflow-x:auto;">
+      <table class="table table-hover table-dark">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nome</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody class="tabela">
+  
+        </tbody>
+    </table>
+    </div>
   </div>
 
 
@@ -34,6 +51,7 @@
     <p>Gustavo William de Bessa</p>
     <p id="dataHoje"></p>
   </footer>
-  <script src="public/javascript/script.js"></script>
+  <script src="../../public/javascript/script.js"></script>
+  <script src="../../public/javascript/alunos.js"></script>
 </body>
 </html>

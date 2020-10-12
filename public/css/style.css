@@ -1,3 +1,19 @@
+.float-r {
+  float: right;
+}
+
+.eu-tabela {
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+}
+
+.eu-tabela:hover {
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(156, 147, 147);
+}
+
 #overview {
   padding-top: 15vh;
 }
@@ -31,7 +47,7 @@
   padding-bottom: 3rem;
   min-height: 45vh !important;
   width: 100%;
-  background: url("/static/img/lakecover.jpg") no-repeat;
+  background: url("/static/img/tree-sunset.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -56,7 +72,7 @@ section {
   min-height: 30vh;
   width: 100%;
   background-color:#563d7c;
-  background: url("/static/img/tree-sunset.jpg") no-repeat;
+  background: url("/static/img/dark-lake.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   color:#fff;
@@ -69,6 +85,7 @@ section {
 }
 
 .footer-img {
+  padding-top: 10vh;
   min-height: 30vh !important;
   width: 100%;
   background: url("/static/img/lakecover.jpg") no-repeat;
@@ -92,6 +109,16 @@ section {
   font-weight:100;
 }
 
+#header > p {
+  font-weight:600 !important;
+  text-shadow: -1px 1px 1px rgba(0,0,0,1);
+  text-shadow: 0 0 5px rgba(0,0,0,1);
+}
+
+#form {
+  padding-top: 10vh;
+}
+
 #main {
   background-color: #fff;
   position: relative; 
@@ -101,12 +128,12 @@ section {
 /* Style the navbar */
 #navbar {
   overflow: hidden;
-  background-color: rgba(156, 26, 125);
+  background-color: #030207;
 }
 
 #footer {
   min-height: 10vh;
-  background-color: rgba(156, 26, 125);
+  background-color: #030207;
   color: #f2f2f2;
 }
 
@@ -128,11 +155,6 @@ section {
   text-decoration: underline;
 }
 
-/* Page content */
-.content {
-  padding: 16px;
-}
-
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
@@ -146,13 +168,24 @@ section {
   padding-top: 60px;
 }
 
-@media screen and (max-width: 574px) {
+@media screen and (max-width: 575px) {
   .container {
     padding-left: 10vw !important; 
     padding-right: 10vw !important; 
   }
 
+  .mobile-left {
+    float: left !important;
+  }
+
   #pessoal {
     margin-top: 15vh;
   }
+}
+
+@media screen and (max-width: 315px) {
+  h1 {
+    font-size: 2rem !important; 
+  }
+
 }
