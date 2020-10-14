@@ -40,7 +40,6 @@ app.get(PUBPATH + "/json/avaliacao1.json", (req, res) => {
     if(err) throw err;
   
     const JSONalunos = JSON.parse(data);
-    console.log(JSONalunos);
     res.send(JSONalunos);
   });
 
