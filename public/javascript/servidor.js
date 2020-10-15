@@ -1,13 +1,20 @@
 const express = require('express');
-const fs = require('fs');
-
 const app = express();
+const fs = require('fs');
+const path = require('path');
+
+var directoryServidor = path.dirname(__dirname);
+let directory = directoryServidor.substring(0, directoryServidor.lastIndexOf('\\'));
+
+const PUBPATH = directory + '\\public'
+const SRCPATH = directory + '\\src'
+
+app.use('/public', express.static(PUBPATH));
+app.use('/static', express.static(SRCPATH));
+
 app.use(express.urlencoded({
   extended: true
 }))
-
-const SRCPATH = 'C://Users//gusta//Desktop//4th//DAW1//p1//avaliacao-daw-01//src';
-const PUBPATH = 'C://Users//gusta//Desktop//4th//DAW1//p1//avaliacao-daw-01//public';
 
 app.use('/public', express.static(PUBPATH));
 app.use('/static', express.static(SRCPATH));
@@ -40,6 +47,7 @@ app.get(PUBPATH + "/json/avaliacao1.json", (req, res) => {
     if(err) throw err;
   
     const JSONalunos = JSON.parse(data);
+    console.log(JSONalunos);
     res.send(JSONalunos);
   });
 
