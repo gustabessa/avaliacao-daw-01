@@ -13,7 +13,7 @@ var HttpClient = function() {
 
 const client = new HttpClient();
 
-client.get('public/json/avaliacao1.json', function(res) {
+client.get('/public/json/avaliacao1.json', function(res) {
     carregarLista(res);
 });
 
